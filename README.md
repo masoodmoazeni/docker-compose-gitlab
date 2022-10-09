@@ -12,6 +12,22 @@ Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/g
 
 Made to work behind a separate automated [nginx-proxy](https://github.com/jwilder/nginx-proxy) with SSL support via letsencrypt.
 
+
+GitLab Runner
+--
+if you wanr run gitlab runner on server you must run this command
+```
+docker-compose exec gitlab-runner gitlab-runner register
+```
+
+after that you must answer question for configuration gitlab runner
+
+in your gitlab you must get registry address and registration token
+on this address http://your-ip/root/name-project/-/settings/ci_cd
+
+on part runner you can get on it
+
+
 --------
 
 
