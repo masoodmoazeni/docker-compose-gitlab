@@ -27,6 +27,16 @@ on this address http://your-ip/root/name-project/-/settings/ci_cd
 
 on part runner you can get on it
 
+if you want install gitlab runner on ubuntu you can run these command
+
+```
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
+sudo apt-get install gitlab-runner
+apt-cache madison gitlab-runner
+gitlab-runner -version
+gitlab-runner status
+gitlab-runner register
+```
 
 --------
 
