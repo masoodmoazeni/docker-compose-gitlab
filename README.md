@@ -36,7 +36,6 @@ docker exec -it gitlab-runner gitlab-runner register --url "http://gitlab-ce" --
 - Enter tags for the runner: blank
 - Enter an executor: docker
 - Enter the default Docker image : httpd
-- 
 
 Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker images leveraging separate instances for services:
 
