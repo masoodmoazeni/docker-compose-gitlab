@@ -8,14 +8,16 @@ first clone this repository and run
 docker-compose up -d
 ```
 after that 5 until 10 minute you see gitlab login
-`
-after you must run 
+
+after you must run this command for get password 
+
 ```
 docker exec -it gitlab-ce grep 'Password:' /etc/gitlab/initial_root_password
 ```
-for get password
 user : root
-password : 
+
+password : generated
+
 
 Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker images leveraging separate instances for services:
 
