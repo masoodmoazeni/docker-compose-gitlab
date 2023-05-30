@@ -1,6 +1,7 @@
 # Compose file for Gitlab Community Edition
 
 install gitlab and gitlab runner with docker-compose
+--
 first clone this repository and run
 
 ```
