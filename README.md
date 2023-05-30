@@ -30,10 +30,10 @@ first run this command
 docker exec -it gitlab-runner gitlab-runner register --url "http://gitlab-ce" --clone-url "http://gitlab-ce"
 ```
 
-Enter the GitLab instance URL: address website
---
-Enter the registration token: get token from this address your-address/admin/runner
---
+-- Enter the GitLab instance URL: address website
+
+-- Enter the registration token: get token from this address your-address/admin/runner
+
 Enter a description for the runner : gitlab-runner
 --
 Enter tags for the runner: blank
