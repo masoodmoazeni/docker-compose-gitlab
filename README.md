@@ -18,6 +18,11 @@ user : root
 
 password : generated
 
+you must change password after that login
+
+tips:please Sign-up enabled ist disable
+
+
 
 Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker images leveraging separate instances for services:
 
