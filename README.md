@@ -37,6 +37,15 @@ docker exec -it gitlab-runner gitlab-runner register --url "http://gitlab-ce" --
 - Enter an executor: docker
 - Enter the default Docker image : httpd
 
+after that add this test on end of this file config.toml
+
+```
+network_mode = "gitlab-network"
+```
+
+this file ist exist in file gitlab on your system
+
+
 Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker images leveraging separate instances for services:
 
 - Uses official [postgres](https://hub.docker.com/_/postgres/) docker image
