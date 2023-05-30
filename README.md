@@ -1,9 +1,10 @@
 # Compose file for Gitlab Community Edition
-
-[![License](https://img.shields.io/github/license/mgcrea/docker-compose-gitlab-ce.svg?style=flat)](https://tldrlegal.com/license/mit-license)
-[![Docker Stars](https://img.shields.io/docker/stars/gitlab/gitlab-ce.svg)](https://registry.hub.docker.com/u/gitlab/gitlab-ce/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/gitlab/gitlab-ce.svg)](https://registry.hub.docker.com/u/gitlab/gitlab-ce/)
-
+```
+install gitlab and gitlab runner with docker-compose
+```
+first clone this repository and run docker-compose up -d
+```
+after 
 Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker images leveraging separate instances for services:
 
 - Uses official [postgres](https://hub.docker.com/_/postgres/) docker image
