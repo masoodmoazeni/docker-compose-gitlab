@@ -1,10 +1,20 @@
 # Compose file for Gitlab Community Edition
-```
+
 install gitlab and gitlab runner with docker-compose
+first clone this repository and run
+
 ```
-first clone this repository and run docker-compose up -d
+docker-compose up -d
 ```
-after 
+after that 5 until 10 minute you see gitlab login
+after you must run 
+```
+docker exec -it gitlab-ce grep 'Password:' /etc/gitlab/initial_root_password
+```
+for get password
+user : root
+password : 
+
 Working `docker-compose.yml` for official [gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce) docker images leveraging separate instances for services:
 
 - Uses official [postgres](https://hub.docker.com/_/postgres/) docker image
