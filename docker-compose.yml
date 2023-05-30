@@ -16,7 +16,7 @@ services:
       - gitlab
   gitlab-runner:
     image: 'gitlab/gitlab-runner:latest'
-    name: 'gitlab-runner'
+    container_name: 'gitlab-runner'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - './config_runner:/etc/gitlab-runner'
