@@ -8,6 +8,7 @@ first clone this repository and run
 docker-compose up -d
 ```
 after that 5 until 10 minute you see gitlab login
+`
 after you must run 
 ```
 docker exec -it gitlab-ce grep 'Password:' /etc/gitlab/initial_root_password
