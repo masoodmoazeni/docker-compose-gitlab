@@ -2,8 +2,8 @@ version: '3.7'
 services:
   web:
     image: 'gitlab/gitlab-ce:14.6.0-ce.0'
-    restart: always
-    hostname: '127.0.0.1'
+    restart: unless-stopped
+    hostname: '192.168.1.125'
     container_name: gitlab-ce
     ports:
       - '80:80'
@@ -15,7 +15,7 @@ services:
     networks:
       - gitlab
   gitlab-runner:
-    image: 'gitlab/gitlab-runner:latest'
+    image: 'gitlab/gitlab-runner:alpine'
     container_name: 'gitlab-runner'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
